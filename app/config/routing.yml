@@ -1,3 +1,16 @@
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
+road:
+    path:      /roadto86/{name}
+    defaults:  { _controller: AppBundle:Roadto86:index }
+ajax:
+    path:      /roadto86/ajax/new
+    defaults:  { _controller: AppBundle:Roadto86:ajax }
+    methods:   POST
+welcome:
+    path:      /
+    defaults:  { _controller: AppBundle:Roadto86:home }
+road_new:
+    path:      /roadto86
+    defaults:  { _controller: AppBundle:Roadto86:road }

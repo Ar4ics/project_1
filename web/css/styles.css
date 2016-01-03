@@ -1,0 +1,10 @@
+.hidden {
+    display: none;
+}
+.visible {
+    display: normal;
+}
+.images {
+    width: 200px;
+    height: 150px;
+}

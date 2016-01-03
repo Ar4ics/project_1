@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <p>Сегодняшний виновник торжества: <span id="name">{{ name }}</span></p>
+    <button onclick="show();">Принять участие в викторине</button>
+    <div id="main" class="hidden">
+    <button id="chooser">Рандомно выбрать преподавателя</button>
+    <p id="attempts">Осталось попыток: 3</p>
+    <div class="prepods">
+    </div>
+    </div>
+{% endblock %}
+
+{% block stylesheets %}
+{{ parent() }}
+<link rel="stylesheet" href="{{ asset('css/styles.css') }}"/>
+{% endblock %}
+
+{% block javascripts %}
+{{ parent() }}
+<script src="{{ asset('js/jquery.min.js') }}"></script>
+<script src="{{ asset('js/main.js') }}"></script>
+{% endblock %}

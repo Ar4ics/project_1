@@ -1,0 +1,16 @@
+AppBundle\Entity\Prepod:
+    type: entity
+    table: prepod
+    id:
+        id:
+            type: integer
+            generator: { strategy: AUTO }
+    fields:
+        name:
+            type: string
+            length: 100
+        description:
+            type: text
+        foto:
+            type: string
+            length: 100
