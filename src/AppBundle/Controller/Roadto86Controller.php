@@ -20,10 +20,6 @@ class Roadto86Controller extends Controller
         ));
     }
     
-    public function roadAction() {
-        
-        return $this->redirectToRoute('road', array('name' => "Алексей"), 301);
-    }
     
     public function homeAction() {
         

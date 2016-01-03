@@ -13,4 +13,7 @@ welcome:
     defaults:  { _controller: AppBundle:Roadto86:home }
 road_new:
     path:      /roadto86
-    defaults:  { _controller: AppBundle:Roadto86:road }
+    defaults:  { _controller: AppBundle:Roadto86:home }
+web:
+    path:      /web
+    defaults:  { _controller: AppBundle:Roadto86:home }
